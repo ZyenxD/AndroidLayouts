@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidLayouts</string>
+    <string name="example3">ejemplo3</string>
+    <string name="show">Show</string>
 </resources>

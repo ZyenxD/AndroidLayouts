@@ -4,28 +4,37 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".activities.MainActivity" />
         <activity android:name=".activities.Main2Activity" />
         <activity android:name=".activities.RealiteveActivity" />
         <activity android:name=".activities.TableActivity" />
         <activity android:name=".activities.FrameActivity" />
         <activity android:name=".activities.ConstrainActivity" />
         <activity android:name=".activities.weightActivity" />
-        <activity android:name=".activities.ListActivity">
-        </activity>
-        <activity android:name=".activities.AutoCompleteActivity">
+        <activity android:name=".activities.ListActivity" />
+        <activity android:name=".activities.AutoCompleteActivity" />
+        <activity android:name=".activities.StylesActivity" />
+        <activity android:name=".activities.ImageActivity" />
+        <activity android:name=".activities.EditTextActivity" />
+        <activity android:name=".activities.AutoCompleteExActivity" />
+        <activity android:name=".activities.AlertDialogActivity" />
+        <activity android:name=".activities.ImageButtonActivity" />
+        <activity android:name=".activities.CheckBoxActivity" />
+        <activity android:name=".activities.ToggleButtonActivity"></activity>
+        <activity android:name=".activities.RadioActivity">
 
+        </activity>
+        <activity android:name=".activities.SpinnerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
