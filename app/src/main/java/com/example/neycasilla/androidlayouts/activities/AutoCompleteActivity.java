@@ -2,6 +2,7 @@ package com.example.neycasilla.androidlayouts.activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,6 +40,15 @@ public class AutoCompleteActivity extends AppCompatActivity implements View.OnCl
 
         mRadioGroup = findViewById(R.id.my_radio_group);
         findViewById(R.id.my_button).setOnClickListener(this);
+
+        Intent intent = getIntent();
+
+        String falseHint = intent.getStringExtra("hint");
+
+        Bundle bundle = intent.getExtras();
+        Bundle bundleTwo = intent.getBundleExtra("bundelPack");
+
+        autoCompleteTextView.setHint(bundle.getString("realHint"));
 
     }
 

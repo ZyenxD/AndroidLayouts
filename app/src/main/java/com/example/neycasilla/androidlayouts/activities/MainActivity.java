@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         frameButton.setOnClickListener(this);
         constrainButton.setOnClickListener(this);
         weightButton.setOnClickListener(this);
+
+        findViewById(R.id.pass_data).setOnClickListener(this);
     }
 
     @Override
@@ -56,6 +58,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.weightLayoutButton:
                 intent = new Intent(MainActivity.this, weightActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.pass_data:
+                intent = new Intent(MainActivity.this, AutoCompleteActivity.class);
+
+                intent.putExtra("boolVal",false);
+                intent.putExtra("hint","Esto es un hint");
+
+                Bundle bundle = new Bundle();
+                bundle.putString("name","Texto");
+                bundle.putBoolean("boolval",true);
+                bundle.putString("surename","Nombre");
+                bundle.putString("realHint","Este es el verdadero hint");
+
+
+                intent.putExtras(bundle);
+                intent.putExtra("bundelPack",bundle);
+
                 startActivity(intent);
                 break;
         }

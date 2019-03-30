@@ -20,5 +20,8 @@ public class AutoCompleteExActivity extends AppCompatActivity {
         autoCompleteTextView.setAdapter( new ArrayAdapter<>(this,R.layout.text_view_item,data));
 
         autoCompleteTextView.setThreshold(1);
+
+
+        
     }
 }

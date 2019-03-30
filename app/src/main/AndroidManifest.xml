@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activities.Main2Activity" />
         <activity android:name=".activities.RealiteveActivity" />
         <activity android:name=".activities.TableActivity" />
@@ -25,16 +31,15 @@
         <activity android:name=".activities.AlertDialogActivity" />
         <activity android:name=".activities.ImageButtonActivity" />
         <activity android:name=".activities.CheckBoxActivity" />
-        <activity android:name=".activities.ToggleButtonActivity"></activity>
-        <activity android:name=".activities.RadioActivity">
-
+        <activity android:name=".activities.ToggleButtonActivity" />
+        <activity android:name=".activities.RadioActivity" />
+        <activity android:name=".activities.SpinnerActivity" />
+        <activity android:name=".activities.PickersExActivity" />
+        <activity android:name=".activities.DialogExActivity"></activity>
+        <activity android:name=".activities.ReciveDataActivity" />
+        <activity android:name=".activities.PickersActivity">
         </activity>
-        <activity android:name=".activities.SpinnerActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".PickerDialogActivity">
         </activity>
     </application>
 
